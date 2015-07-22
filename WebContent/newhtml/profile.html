@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" media="screen" type="text/css" href="moviestyle.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Movie'S'tuff - Profile Page</title>
+		
+	</head>
+
+	<body id="bod">
+	<div id="wrapper">
+
+		<img id="anim" src="./pictures/title2.JPG" alt="website name" height="70" width="250" style="float:left;"/>
+		<div id='menu'>
+		<br />
+		<nav>
+			<ul>
+				<div id="nav-bar">
+			   <li><a href='index.html'><span>Home</span></a></li>
+			   <li><a href='#'><span>News</span></a></li>
+				<li><a href='#'><span>Release Dates</span></a></li>
+			   <li><a href='#'><span>Top Trending Movies</span></a></li>
+			   <li class='active'><a href="profile.html"><span>Profile</span></a></li>
+			   <li><a href='#'><span>More</span></a></li>
+			   </div>
+			</ul>
+		</nav>
+	</div>
+
+	<div id="container">
+	
+	
+	
+<!--User's name-->
+<div id="usr">
+	<form id="logForm" action="">
+			
+			<span id="usrName"> <a href="profile.html"> StanMathers </a> </span>			
+			<input id="logoutButtonHome" type="button" onclick="logout();" value="Logout" />
+	</form>
+
+</div>
+<!--             -->
+
+
+
+
+
+
+
+<!--
+<form class="movi act">
+        <input type="text" placeholder="Actors,Directors,Movies...." required>
+        <button type="submit">Search</button>
+</form>
+-->
+
+
+<div id="box">
+
+
+
+
+<!--.............BIG TAB...............-->
+<div class="bigTabs">
+	<div class="bigTab">
+		<input type="radio" id="manageFavoritesTab" name="bigTabGroup" checked>
+		<label id="bigTag1" for="manageFavoritesTab"> Manage Favorites  </label>
+		<div class="bigTabContent">
+					
+					<!--Tabs Actors, Directors ... --> 
+
+					<div id="manageForm">
+						<form id="manageForm" action="">
+
+						
+							<div class="tabs">
+								<div class="tab">
+									<input type="radio" id="actorsTab" name="tabGroup" checked>
+									<label id="tag1" for="actorsTab"> Actors </label>
+									<div class="tabContent">
+										<input id="addField" type="text" size="25" placeholder=" Actor"> 
+										<input id="addButton" type="button" onclick="addFav();" value="Add"> <br /> <br />
+										All your favourite Actors <br />
+										<ul style="list-style-type:none">
+											<li> <input type="image" src="./pictures/del.JPG" name="delButton" class="delete" id="delButto" width="15" height="15"> Tom Cruise</li> <br />
+											<li> <input type="image" src="./pictures/del.JPG" name="delButton" class="delete" id="delButto" width="15" height="15"> John Travolta</li> <br />
+											<li> <input type="image" src="./pictures/del.JPG" name="delButton" class="delete" id="delButto" width="15" height="15"> Jim Carry</li> <br />
+											<li> <input type="image" src="./pictures/del.JPG" name="delButton" class="delete" id="delButto" width="15" height="15"> Nicolas Cage</li> <br />
+											<li> <input type="image" src="./pictures/del.JPG" name="delButton" class="delete" id="delButto" width="15" height="15"> Will Smith</li> <br />
+											<li> <input type="image" src="./pictures/del.JPG" name="delButton" class="delete" id="delButto" width="15" height="15"> Brad Pitt</li> <br />
+											<li> <input type="image" src="./pictures/del.JPG" name="delButton" class="delete" id="delButto" width="15" height="15"> Catherine Zeta Jones </li> <br />
+										</ul>
+									</div>
+								</div>
+								<div class="tab">
+									<input type="radio" id="directorsTab" name="tabGroup">
+									<label id="tag2" for="directorsTab"> Directors </label>
+									<div class="tabContent">
+										<input id="addField" type="text" size="25" placeholder=" Director"> 
+										<input id="addButton" type="button" onclick="addFav();" value="Add"> <br /> <br />
+										All your favourite Directors <br />
+									</div>
+								</div>
+								<div class="tab">
+									<input type="radio" id="writersTab" name="tabGroup">
+									<label id="tag3" for="writersTab"> Scenario Writers </label>
+									<div class="tabContent">
+										<input id="addField" type="text" size="25" placeholder=" Scenario Writer"> 
+										<input id="addButton" type="button" onclick="addFav();" value="Add"> <br /> <br />
+										All your favourite Scenario Writers <br />
+										
+									</div>
+								</div>
+								<div class="tab">
+									<input type="radio" id="studiosTab" name="tabGroup">
+									<label id="tag4" for="studiosTab"> Studios </label>
+									<div class="tabContent">
+										<input id="addField" type="text" size="25" placeholder=" Studio"> 
+										<input id="addButton" type="button" onclick="addFav();" value="Add"> <br /> <br />
+										All your favourite Studios <br />
+										
+									</div>
+								</div>
+								<div class="tab">
+									<input type="radio" id="genresTab" name="tabGroup">
+									<label id="tag5" for="genresTab"> Film Genres </label>
+									<div class="tabContent">
+										<input id="addField" type="text" size="25" placeholder=" Film Genre"> 
+										<input id="addButton" type="button" onclick="addFav();" value="Add"> <br /> <br />
+										All your favourite Film Genres <br />
+										
+									</div>
+								</div>
+								
+							</div>
+						</form>
+					</div>
+
+			</div>
+		</div>
+
+
+
+			<!-- ..............Account Settings ................-->
+		<br /> <br />
+		<div class="bigTab">
+		<input type="radio" id="accSettingsTab" name="bigTabGroup" >
+		<label id="bigTag2" for="accSettingsTab"> Account Settings </label>
+			<div class="bigTabContent">
+			Change you Username <br />
+			Your new username <br />
+			<input type="text" id="newUsername"/> <br /> 
+			<input type="submit" id="applyUserName" value = "Apply"/><br /> <br />   
+
+			Change your Email Address <br />
+			Your current email address is <span> StanMathers@gmail.com </span> <br />
+			Your new email address <br />
+			<input type="text" id="newEmail"/> <br />
+			Please re-type your new email address <br />
+			<input type="text" id="newEmailRetype"/> <br />
+			<input type="submit" id="applyEmail" value = "Apply"/>
+			<br /> <br />
+
+			Change your Password <br />
+			Your new password <br />
+			<input type="password" id="newPassword"/> <br />
+			Please re-type your new password <br />
+			<input type="password" id="newPasswordRetype"/> <br />
+			<input type="submit" id="applyPassword" value = "Apply"/>
+
+			</div>
+		</div>
+
+
+			<!-- ..............Notifications Settings ................-->
+		<!--
+		<br /> <br /> <br />
+		<div class="bigTab">
+		<input type="radio" id="notSettingsTab" name="bigTabGroup" >
+		<label for="notSettingsTab"> Notification Settings </label>
+			Notifications Settings
+			</div>
+		</div>
+		-->
+
+
+<br /><br /><br /><br /><br /><br /><br />
+<br />
+</div>
+</body>
+</html>  

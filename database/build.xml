@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="movie DBhelpers">
+    
+    <path id="project.classpath">
+		<pathelement location="../lib/mysql-connector-java-5.1.26-bin.jar" />
+	</path>
+    
+	<target name="load-mysqldb" description="Load Mysql database">
+		<sql classpathref="project.classpath" driver="com.mysql.jdbc.Driver" 
+			url="jdbc:mysql://localhost:3306/moviedb" userid="cerick" 
+			password="EPwg3EPwg3" src="createdb.sql" />
+	</target>
+	
+	<target name="show-mysqldb" description="Display tables">
+		<sql classpathref="project.classpath" driver="com.mysql.jdbc.Driver" 
+			url="jdbc:mysql://localhost:3306/moviedb" userid="cerick" 
+			password="EPwg3EPwg3" print="true" src="showdb.sql">
+		</sql>
+	</target>
+	<target name="drop-mysqldb" description="drop Mysql tables">
+		<sql classpathref="project.classpath" driver="com.mysql.jdbc.Driver" 
+			url="jdbc:mysql://localhost:3306/moviedb" userid="cerick" 
+			password="EPwg3EPwg3" src="dropdb.sql" onerror="continue" />
+	</target>
+</project>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" media="screen" type="text/css" href="moviestyle.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Movie'S'tuff - Registration Form</title>
+		<script type="text/javascript" src="signin.js"></script>
+	</head>
+
+	<body id="bod">
+		<img id="anim" src="./pictures/title2.JPG" alt="website name" height="70" width="300" style="float:right;"/>
+		<div id='menu'>
+			<br />
+			<nav>
+				<ul>
+   					<li class='active'><a href='index.html'><span>Home</span></a></li>
+   					<li><a href='#'><span>News</span></a></li>
+					<li><a href='#'><span>Release Dates</span></a></li>
+   					<li><a href='#'><span>Top Trending Movies</span></a></li>
+   					<li class='last'><a href='#'><span>SignUp / SignIn</span></a></li>
+				</ul>
+			</nav>
+		</div>
+
+		<br /><br /><br /><br /><br /><br />
+
+		
+		<form id="regForm" class="center" action="">
+			
+			<h1> Set up your free account </h1>
+			<p>
+				Register your account and get many additional features like personalized news, release dates and many more.
+			</p>
+						
+			<p> 
+				<div id="err">
+					<span id="errMsg1"> </span> <br/>
+					<span id="errMsg2"> </span> <br/>
+					<span id="errMsg3"> </span> <br/>
+				</div>
+			</p>
+
+			<p> 
+				Email <input name="email" id="email" class="field" type="text" size="30" maxlenght="30" /> 
+			</p>
+			<p> 
+				Username 
+				<input name="userName" class="field" type="text" size="30" maxlength="20"  /> <span id="restr"> Minimum 5 characters <span>  
+			</p>
+			<p> 
+				Password <input name="password" id="password" class="field" type="password" size="30" maxlength="20" /> <span id="restr"> Minimum 8 characters </span>
+			</p>  
+
+			<br/>
+			<p> <input id="signinButton" type="button" onclick="signin();" value="Sign In" /> </p>
+						
+		</form>
+
+	<body>
+
+</html>
